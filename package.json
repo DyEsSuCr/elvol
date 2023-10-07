@@ -1,0 +1,17 @@
+{
+  "name": "elvol",
+  "version": "1.0.0",
+  "description": "control volume",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron ."
+  },
+  "author": "DyEsSuCr",
+  "license": "GPL",
+  "devDependencies": {
+    "electron": "26.3.0"
+  },
+  "dependencies": {
+    "loudness": "0.4.2"
+  }
+}

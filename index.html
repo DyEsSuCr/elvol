@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Control de Volumen</title>
+</head>
+<body>
+    <h1>Volumen: <span id="volume">50</span></h1>
+    <script>
+        // Recibe el nuevo volumen del proceso principal
+        require('electron').ipcRenderer.on('update-volume', (event, volume) => {
+            document.getElementById('volume').textContent = volume;
+        });
+    </script>
+</body>
+</html>
